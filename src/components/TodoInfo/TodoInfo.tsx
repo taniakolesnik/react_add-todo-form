@@ -11,7 +11,7 @@ export const TodoInfo = ({ todo }: Props) => {
   const author = usersFromServer.find(user => user.id === todo.userId);
 
   if (!author) {
-    return;
+    return null;
   }
 
   return (
